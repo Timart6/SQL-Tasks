@@ -1,0 +1,25 @@
+1.	SELECT N, Code, IsNew, Name, Price, Pages FROM books
+2.	SELECT * FROM `books`
+3.	SELECT Code, Name, IsNew, Pages, Price, N FROM books;
+4.	SELECT * FROM `books` LIMIT 10
+5.	 
+6.	SELECT DISTINCT Code FROM books
+7.	SELECT * FROM books WHERE IsNew = 1;
+8.	SELECT * FROM books WHERE IsNew = 1 AND Price BETWEEN 20 AND 30;
+9.	SELECT * FROM books WHERE IsNew = 1 AND Price < 20 AND Price > 30;
+10.	SELECT * FROM books WHERE Pages BETWEEN 300 AND 400 AND Price > 20 AND Price < 30
+11.	SELECT* FROM books WHERE Date BETWEEN '2000-01-01' AND '2000-02-28' OR Date BETWEEN '2000-12-01' AND '2000-12-31'
+12.	SELECT * FROM `books` WHERE Code = 5110 OR Code = 5141 OR Code = 4985 OR Code = 4241;
+13.	SELECT * FROM `books` WHERE Date BETWEEN '1993-01-01' AND '1993-12-31' OR 
+Date BETWEEN '2001-01-01' AND '2001-12-31' OR
+Date BETWEEN '2003-01-01' AND '2003-12-31' OR
+Date BETWEEN '2005-01-01' AND '2005-12-31'
+14.	S
+15.	SELECT * FROM books WHERE Name LIKE 'АПП%' AND Date = 2000 AND Price < 20;
+16.	SELECT * FROM books WHERE Name LIKE 'АПП%' AND YEAR(Date) = 2000 AND Price < 20;
+17.	SELECT * FROM books WHERE Name = '*{Microsoft}*' AND Name NOT = '*{Windows}*'
+18.	SELECT * FROM books WHERE Name REGEXP '[0-9]'
+19.	SELECT * FROM books WHERE Name REGEXP '([0-9].*){3}'
+20.	SELECT * FROM `books` WHERE REGEXP '([0-9].*){5}' AND Name NOT REGEXP '([0-9].*){6}';
+
+
